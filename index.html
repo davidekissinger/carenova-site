@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareNova | Transforming Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              fadeIn: 'fadeIn 1.5s ease-out forwards',
+              slideUp: 'slideUp 1.5s ease-out forwards'
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 }
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(40px)', opacity: 0 },
+                '100%': { transform: 'translateY(0)', opacity: 1 }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 1s ease;
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="sticky top-0 bg-white shadow z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">CareNova</h1>
+        <nav class="space-x-6 text-sm">
+          <a href="#about" class="hover:text-blue-600">About</a>
+          <a href="#services" class="hover:text-blue-600">Services</a>
+          <a href="#approach" class="hover:text-blue-600">Approach</a>
+          <a href="#testimonials" class="hover:text-blue-600">Testimonials</a>
+          <a href="#insights" class="hover:text-blue-600">Insights</a>
+          <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </nav>
+        <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm">Schedule a Consultation</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-50 py-20 text-center reveal" id="hero">
+      <h2 class="text-4xl font-bold mb-4">Transforming Healthcare, One Solution at a Time</h2>
+      <p class="text-lg mb-6">CareNova partners with providers to deliver innovative, results-driven solutions that improve care, reduce costs, and future-proof your organization.</p>
+      <div class="space-x-4">
+        <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg">Let’s Talk</a>
+        <a href="#services" class="border border-blue-600 text-blue-600 px-6 py-2 rounded-lg">Explore Our Services</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 px-4 max-w-5xl mx-auto text-center reveal" id="about">
+      <h3 class="text-3xl font-bold mb-4">Who We Are</h3>
+      <p class="text-lg">CareNova is a healthcare consulting firm built for today’s complexities. We help hospitals, physician groups, and health systems solve operational and clinical challenges with customized strategies that lead to real results.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-100 px-4 reveal" id="services">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-8">Our Services</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div><h4 class="font-semibold">Accreditation & Compliance</h4><p>Prepare for The Joint Commission, CMS, or state inspections with confidence.</p></div>
+          <div><h4 class="font-semibold">Workflow Optimization</h4><p>Align people, process, and technology for better efficiency and outcomes.</p></div>
+          <div><h4 class="font-semibold">Value-Based Care Readiness</h4><p>Navigate ACOs, HEDIS, and quality measures with strategic support.</p></div>
+          <div><h4 class="font-semibold">Revenue Cycle & Financial Health</h4><p>Improve margins through smarter billing, coding, and payer strategies.</p></div>
+          <div><h4 class="font-semibold">Population Health Strategy</h4><p>Develop programs that address social determinants and boost community impact.</p></div>
+          <div><h4 class="font-semibold">Custom Advisory Engagements</h4><p>Tailored support for your unique priorities and goals.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="py-16 px-4 max-w-6xl mx-auto text-center reveal" id="approach">
+      <h3 class="text-3xl font-bold mb-8">Our Approach</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div><h4 class="font-semibold text-xl">Discover</h4><p>We listen, analyze, and identify root causes.</p></div>
+        <div><h4 class="font-semibold text-xl">Design</h4><p>Together, we build a plan that fits your team and culture.</p></div>
+        <div><h4 class="font-semibold text-xl">Deliver</h4><p>We stay engaged through execution and measurable results.</p></div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-blue-50 py-16 px-4 reveal" id="testimonials">
+      <h3 class="text-3xl font-bold text-center mb-8">What Our Partners Say</h3>
+      <div class="max-w-4xl mx-auto space-y-6 text-center">
+        <blockquote>“CareNova brought fresh insight to a system we thought was unfixable. Now we’re thriving.”</blockquote>
+        <blockquote>“We were survey-ready in record time—and passed with zero deficiencies.”</blockquote>
+        <blockquote>“Their team felt like part of ours. Smart, responsive, and strategic.”</blockquote>
+      </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section class="py-16 px-4 max-w-6xl mx-auto reveal" id="insights">
+      <h3 class="text-3xl font-bold text-center mb-8">Insights</h3>
+      <ul class="space-y-4 text-lg text-center">
+        <li><a href="#" class="text-blue-600 hover:underline">📘 How to Prepare for a Joint Commission Survey</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">📊 Making the Most of HEDIS Measures in Primary Care</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">🤖 AI & Automation in Clinical Operations: What’s Real?</a></li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-gray-100 py-16 px-4 reveal" id="contact">
+      <div class="max-w-xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-6">Let’s Start a Conversation</h3>
+        <form class="space-y-4">
+          <input type="text" placeholder="Name" class="w-full px-4 py-2 border rounded" />
+          <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded" />
+          <textarea placeholder="Message" class="w-full px-4 py-2 border rounded" rows="4"></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded">Submit</button>
+        </form>
+        <p class="mt-4 text-sm text-gray-600">Or reach out directly: hello@carenova.com</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 border-t text-center text-sm reveal">
+      <p>© 2025 CareNova Solutions. All rights reserved.</p>
+      <p class="mt-2 text-gray-500">Transforming Care Through Innovative Solutions</p>
+    </footer>
+
+    <script>
+      const reveals = document.querySelectorAll('.reveal');
+
+      const revealOnScroll = () => {
+        for (let i = 0; i < reveals.length; i++) {
+          const windowHeight = window.innerHeight;
+          const elementTop = reveals[i].getBoundingClientRect().top;
+          const elementVisible = 100;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add('active');
+          } else {
+            reveals[i].classList.remove('active');
+          }
+        }
+      };
+
+      window.addEventListener('scroll', revealOnScroll);
+      window.addEventListener('load', revealOnScroll);
+    </script>
+  </body>
+</html>
